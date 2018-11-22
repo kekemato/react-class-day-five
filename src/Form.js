@@ -18,7 +18,7 @@ class Form extends React.Component {
                     readOnly={true}
                 >
                 </input>
-                <br></br>
+                <br />
                 <TextField
                     id="text-field-default"
                     defaultValue="Default Value" />

@@ -4,6 +4,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import Counter from './components/Counter'
 import Form from './Form'
+import Users from './components/Users'
 
 const App = (props) => (
   <MuiThemeProvider>
@@ -13,7 +14,7 @@ const App = (props) => (
         min={-10}
         max={10}
       />
-      <hr></hr>
+      <hr />
       <Form />
     </div>
   </MuiThemeProvider>
