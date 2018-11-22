@@ -52,10 +52,4 @@ Counter.defaultProps = {
     max: 5
 }
 
-Counter.propTypes = {
-    startValue: Number,
-    min: Number,
-    max: Number
-}
-
 export default Counter

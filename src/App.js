@@ -1,13 +1,18 @@
 import React from 'react';
 
 import Counter from './components/Counter'
+import Form from './Form'
 
 const App = (props) => (
-  <Counter
-    startValue={5}
-    min={-10}
-    max={10}
-  />
+  <div>
+    <Counter
+      startValue={5}
+      min={-10}
+      max={10}
+    />
+    <hr></hr>
+    <Form />
+  </div>
 
 )
 
