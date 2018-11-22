@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 import Counter from './components/Counter'
 import Form from './Form'
-import Users from './components/Users'
+import Users from './components/Users2'
 
 const App = (props) => (
   <Router>

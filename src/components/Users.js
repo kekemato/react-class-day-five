@@ -31,7 +31,8 @@ class Users extends React.Component {
                         this.state.isLoading ?
                             "Ładowanie..."
                             :
-                            this.state.users ?
+                            this.state.users &&
+                            this.state.users.map &&
                                 this.state.users.map(user => (
                                     <div
                                         key={user.login.uuid}
@@ -39,7 +40,6 @@ class Users extends React.Component {
                                         {user.name.first} {user.name.last}
                                     </div>
                                 ))
-                                : "Brak danych do wyświetlenia!"
                 }
             </div>
         )
