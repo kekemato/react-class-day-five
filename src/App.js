@@ -1,24 +1,34 @@
 import React from 'react'
 
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 import Counter from './components/Counter'
 import Form from './Form'
 import Users from './components/Users'
 
 const App = (props) => (
-  <MuiThemeProvider>
+  <Router>
     <div>
-      <Counter
-        startValue={5}
-        min={-10}
-        max={10}
+      <Link to="/"><p>Home</p></Link>
+      <Link to="/Counter"><p>Counter</p></Link>
+      <Link to="/users"><p>Users</p></Link>
+      <Link to="/form"><p>Form</p></Link>
+      <Route path="/counter" component={() => (
+        <Counter
+          startValue={5}
+          min={-10}
+          max={10}
+        />
+      )}
       />
-      <hr />
-      <Form />
+      <Route path="/users" component={() => <Users
+        numberOfResults= {10}
+      />
+      }
+      />
+      <Route path="/form" component={() => <Form />} />
     </div>
-  </MuiThemeProvider>
-
+  </Router>
 )
 
 export default App;

@@ -1,5 +1,4 @@
 import React from 'react'
-import TextField from 'material-ui/TextField'
 
 class Form extends React.Component {
     state = {
@@ -19,9 +18,6 @@ class Form extends React.Component {
                 >
                 </input>
                 <br />
-                <TextField
-                    id="text-field-default"
-                    defaultValue="Default Value" />
 
             </div>
         )
