@@ -1,10 +1,14 @@
-import React, { Component } from 'react';
-import './App.css';
+import React from 'react';
 
-const App = () => (
-  <div>
+import Counter from './components/Counter'
 
-  </div>
+const App = (props) => (
+  <Counter
+    startValue={5}
+    min={-10}
+    max={10}
+  />
+
 )
 
 export default App;
